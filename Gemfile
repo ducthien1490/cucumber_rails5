@@ -45,10 +45,12 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-group :test do
+group :test, :development do
  gem 'cucumber-rails', :require => false
  gem 'database_cleaner'
  gem 'capybara'
+ gem 'rspec-rails'
+ gem 'shoulda-matchers'
 end
 
 group :staging, :production do
