@@ -1,0 +1,10 @@
+inherit_from: .rubocop_todo.yml
+AllCops:
+  Include:
+    - app/*
+  Exclude:
+    - db/schema.rb
+    - features/*
+    - spec/*
+    - app/views/*
+    - app/assets/*
